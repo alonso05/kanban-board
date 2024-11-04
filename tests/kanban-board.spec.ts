@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { KanbanPage } from '../pageobjects/kanbanPage';
+import { KanbanPage } from '../pageobjects/KanbanPage';
 
 test('Edit a Kanban Card', async ({ page })  => {
   // Create a new page object and navigate to the Kanban application
