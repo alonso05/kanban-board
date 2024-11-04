@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        browser: [chromium, firefox, webkit]
+        project: [chromium, firefox, webkit]
 
     steps:
       - name: Checkout code
@@ -23,4 +23,4 @@ jobs:
         run: npx playwright install
 
       - name: Run Playwright tests
-        run: npx playwright test --browser=${{ matrix.browser }}
+        run: npx playwright test --project=${{ matrix.project }}
